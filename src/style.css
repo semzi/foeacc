@@ -1,0 +1,23 @@
+    /* src/index.css or src/style.css */
+@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+  
+  html, body {
+    @apply h-full m-0 p-0;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+  
+  #app {
+    @apply h-full;
+  }
+}
